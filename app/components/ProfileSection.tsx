@@ -6,7 +6,7 @@ const ProfileSection = () => {
 			<div className="space-y-8 text-center">
 				<div className="relative w-28 md:w-40 h-28 md:h-40 mx-auto">
 					<div className="relative w-full h-full rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-gray-700">
-						<Image src="/portrait.jpg" alt="Profile" fill className="object-cover" priority />
+						<Image src="/portfolio/portrait.jpg" alt="Profile" fill className="object-cover" priority />
 					</div>
 				</div>
 
