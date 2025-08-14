@@ -4,20 +4,20 @@ const ProfileSection = () => {
 	return (
 		<div className="w-full py-8 md:py-0 bg-white dark:bg-gray-900 px-6 pt-16 sm:pt-0">
 			<div className="space-y-8 text-center">
-				<div className="relative w-28 md:w-40 h-28 md:h-40 mx-auto">
-					<div className="relative w-full h-full rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-gray-700">
-						<Image src="/portfolio/portrait.jpg" alt="Profile" fill className="object-cover" priority />
-					</div>
-				</div>
+				   <div className="relative mx-auto" style={{ width: 'clamp(7rem, 15vw, 10rem)', height: 'clamp(7rem, 15vw, 10rem)' }}>
+					   <div className="relative w-full h-full rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-gray-700">
+						   <Image src="/portrait.jpg" alt="Profile" fill className="object-cover" priority />
+					   </div>
+				   </div>
 
-				<div className="space-y-3">
-					<h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">Christopher Liwanag</h1>
-					<h2 className="text-lg md:text-xl text-gray-600 dark:text-gray-400">Game Developer | Tool Programmer</h2>
-					<div className="h-px w-16 bg-gray-200 dark:bg-gray-700 mx-auto my-4" />
-					<p className="text-sm md:text-base text-gray-600 dark:text-gray-400 max-w-xs mx-auto leading-relaxed">
-						15+ years building scalable systems and leading engineering teams
-					</p>
-				</div>
+				   <div className="space-y-3">
+					   <h1 className="font-bold text-gray-900 dark:text-white" style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)' }}>Christopher Liwanag</h1>
+					   <h2 className="text-gray-600 dark:text-gray-400" style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)' }}>Game Developer | Tool Programmer</h2>
+					   <div className="h-px w-16 bg-gray-200 dark:bg-gray-700 mx-auto my-4" />
+					   <p className="text-gray-600 dark:text-gray-400 max-w-xs mx-auto leading-relaxed" style={{ fontSize: 'clamp(0.95rem, 2vw, 1.15rem)' }}>
+						   15+ years building scalable systems and leading engineering teams
+					   </p>
+				   </div>
 
 				<div className="space-y-4">
 					{/* Contact Info */}

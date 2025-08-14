@@ -4,24 +4,18 @@ import ExperienceSection from './components/ExperienceSection';
 
 export default function MinimalistPortfolio() {
 	return (
-		<main className="min-h-screen md:h-screen flex flex-col bg-white dark:bg-gray-900 pb-16 sm:pb-0">
-			<div className="flex-1 grid grid-cols-1 md:grid-cols-5">
+		<main className="min-h-screen min-w-0 flex flex-col bg-white dark:bg-gray-900">
+			<div className="flex-1 min-h-0 min-w-0 flex flex-col md:flex-row">
 				{/* Left Column - Profile */}
-				<div className="md:col-span-2 border-b md:border-b-0 md:border-r border-gray-200 dark:border-gray-800 md:flex md:items-center">
-					<ProfileSection />
+				<div className="md:w-2/5 w-full min-w-0 min-h-0 flex flex-col border-b md:border-b-0 md:border-r border-gray-200 dark:border-gray-800 md:h-screen md:sticky md:top-0 justify-center items-center">
+					<div className="w-full flex-1 flex flex-col justify-center items-center p-6">
+						<ProfileSection />
+					</div>
 				</div>
-
 				{/* Right Column - Skills and Experience */}
-				<div className="md:col-span-3 flex flex-col md:justify-center">
-					{/* Skills Section */}
-					<div className="">
-						<SkillsSection />
-					</div>
-
-					{/* Experience Section */}
-					<div>
-						<ExperienceSection />
-					</div>
+				<div className="md:w-3/5 w-full min-w-0 min-h-0 flex flex-col flex-1 grow p-6 gap-[clamp(2rem,6vw,5rem)]">
+					<SkillsSection />
+					<ExperienceSection />
 				</div>
 			</div>
 		</main>
