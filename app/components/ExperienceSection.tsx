@@ -28,7 +28,7 @@ const toolsExperiences = [
 		highlights: [
 			'Room/Hallway Layout Tool - Reduced new space creation time from 15 min → <1 min with Unity Editor extension',
 			'CSV Importer Tool - Imported 100+ entries in <5 sec with full update/create/delete logging',
-			'Team Workflows - Standardized Jira/Confluence processes with GitHub integration.',
+			'Team Workflows - Standardized Jira/Confluence processes with GitHub integration',
 		],
 	},
 	{
@@ -52,13 +52,13 @@ const toolsExperiences = [
 
 const ExperienceSection = () => {
 	return (
-		<div className="py-6 bg-white dark:bg-gray-900 px-6">
-			<div className="space-y-8 max-w-2xl mx-auto">
-				{/* Gameplay Developer Experience */}
-				   <div>
-					   <h3 className="font-semibold text-gray-900 dark:text-white text-center md:text-left" style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)' }}>Gameplay Developer Experience</h3>
-					   <div className="h-px w-full bg-gray-200 dark:bg-gray-700" style={{ marginTop: 'clamp(0.25rem, 1vw, 0.5rem)', marginBottom: 'clamp(0.75rem, 2vw, 1.5rem)' }} />
-					   <div style={{ gap: 'clamp(0.75rem, 2vw, 1.5rem)' }} className="flex flex-col">
+		<div className="py-8 bg-white dark:bg-gray-900 px-6">
+			<div className="space-y-6 max-w-4xl mx-auto">
+					{/* Gameplay Developer Experience */}
+					<div>
+						<h3 className="font-semibold text-gray-900 dark:text-white text-center md:text-left" style={{ fontSize: 'clamp(1.35rem, 2.5vw, 1.9rem)' }}>Gameplay Developer Experience</h3>
+						  <div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2 mb-4" />
+						  <div className="flex flex-col gap-6">
 						{gameplayExperiences.map((exp) => (
 							<div key={exp.company + exp.period} className="relative">
 								<div className="relative pl-4 border-l-2 border-gray-200 dark:border-gray-700">
@@ -81,11 +81,11 @@ const ExperienceSection = () => {
 					</div>
 				</div>
 
-				{/* Tools Programmer Experience */}
-				   <div>
-					   <h3 className="font-semibold text-gray-900 dark:text-white text-center md:text-left" style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)' }}>Tools Programmer Experience</h3>
-					   <div className="h-px w-full bg-gray-200 dark:bg-gray-700" style={{ marginTop: 'clamp(0.25rem, 1vw, 0.5rem)', marginBottom: 'clamp(0.75rem, 2vw, 1.5rem)' }} />
-					   <div style={{ gap: 'clamp(0.75rem, 2vw, 1.5rem)' }} className="flex flex-col">
+					{/* Tools Programmer Experience */}
+					<div>
+						<h3 className="font-semibold text-gray-900 dark:text-white text-center md:text-left" style={{ fontSize: 'clamp(1.35rem, 2.5vw, 1.9rem)' }}>Tools Programmer Experience</h3>
+						  <div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2 mb-4" />
+						  <div className="flex flex-col gap-6">
 						{toolsExperiences.map((exp) => (
 							<div key={exp.company + exp.period} className="relative">
 								<div className="relative pl-4 border-l-2 border-gray-200 dark:border-gray-700">
