@@ -2,13 +2,21 @@
 
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import VideoModal from "./VideoModal";
 
 const projectWardenContributions = [
 	{
 		contribution: 'Gameplay Contributions',
 		highlights: [
 			'Implemented procedural labyrinth generation system with configurable room counts, hallway depth, and seeded randomness - enabled creation of unique levels in seconds instead of manual design',
-			'Designed a modular interaction system adaptable to any interaction type (e.g., NPCs, objects, environment) - used in 10+ gameplay scenarios so far',
+			<>
+				Designed a modular interaction system adaptable to any interaction type (
+					<VideoModal
+						videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ"
+						trigger="demo video"
+					/>
+				) - used in 10+ gameplay scenarios so far
+			</>,
 			'Built an item slot system for inventory and equipment mechanics supporting multiple slot types and scalable item variety',
 		],
 	},
@@ -86,7 +94,7 @@ const echoesOfHubrisContributions = [
 
 type Contribution = {
 	contribution: string;
-	highlights: string[];
+	highlights: React.ReactNode[];
 };
 
 type ProjectOverview = {
