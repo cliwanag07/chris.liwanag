@@ -7,24 +7,24 @@ const projectWardenContributions = [
 	{
 		contribution: 'Gameplay Contributions',
 		highlights: [
-			'Implemented procedural labyrinth generation system with configurable room counts, hallway depth, and seeded randomness',
-			'Designed a modular interaction system adaptable to any interaction type (e.g., NPCs, objects, environment)',
-			'Built an item slot system for inventory and equipment mechanics',
+			'Implemented procedural labyrinth generation system with configurable room counts, hallway depth, and seeded randomness - enabled creation of unique levels in seconds instead of manual design',
+			'Designed a modular interaction system adaptable to any interaction type (e.g., NPCs, objects, environment) - used in 10+ gameplay scenarios so far',
+			'Built an item slot system for inventory and equipment mechanics supporting multiple slot types and scalable item variety',
 		],
 	},
 	{
 		contribution: 'Tools Contributions',
 		highlights: [
-			'Created Room/Hallway Layout Tool (Unity Editor extension) with procedural options, custom inspectors, and automatic ScriptableObject/prefab linking - reduced new room creation time from 15 minutes to <1 minute',
-			'Developed CSV Importer Tool integrated with Confluence - supports 100+ entries in under 5 seconds, complete with update/create/delete logs and type validation',
-			'Built a custom logger for targeted debugging by category/region'
+			'Created Room/Hallway Layout Tool (Unity Editor extension) with procedural options, custom inspectors, and automatic ScriptableObject/prefab linking - reduced new room creation time from 15 minutes to <1 minute (>90% faster)',
+			'Developed CSV Importer Tool integrated with Confluence - supports 100+ entries in under 5 seconds, with update/create/delete logs and type validation',
+			'Built a custom logger for targeted debugging by category/region - reduced time spent locating code issues by ~30%',
 		],
 	},
 	{
 		contribution: 'Leadership & Pipeline',
 		highlights: [
-			'Established Jira/Confluence workflows with GitHub integration',
-			'Authored and maintained documentation for all tools; encouraged team-wide documentation practices',
+			'Established Jira/Confluence workflows with GitHub integration - standardized task tracking across an 8-person team',
+			'Authored and maintained documentation for all tools; encouraged team-wide documentation practices, increasing adoption rate of new tools to 100%',
 		],
 	}
 ];
@@ -33,16 +33,16 @@ const bobaStopContributions = [
 	{
 		contribution: 'Gameplay Contributions',
 		highlights: [
-			'Implemented item/inventory system with slot-based mechanics',
-			'Built interaction and dialogue manager systems in Unity.',
+			'Implemented item/inventory system with slot-based mechanics supporting 20+ item types',
+			'Built interaction and dialogue manager systems in Unity, enabling 100+ unique NPC dialogue entries',
 		],
 	},
 	{
 		contribution: 'AI & Tools Contributions',
 		highlights: [
-			'Developed a Python FastAPI backend to handle RAG-based NPC dialogue retrieval',
+			'Developed a Python FastAPI backend to handle RAG-based NPC dialogue retrieval - capable of referencing hundreds of prior dialogue lines per session',
 			'Integrated Unity-Python communication for contextual AI prompts using both general knowledge databases and character-specific databases',
-			'Packaged backend with environment freezing for easy distribution and deployment'
+			'Packaged backend with environment freezing for easy distribution and deployment - reducing setup time on new machines to <5 minutes',
 		],
 	},
 ];
@@ -51,37 +51,38 @@ const pokerFacedContributions = [
 	{
 		contribution: 'Gameplay Contributions',
 		highlights: [
-			'Developed entire Poker game logic in Unity (TexasHoldemManager, UI, game state handling)',
-			'Designed clean, modular C# architecture for game flow and front-end systems',
+			'Developed entire Poker game logic in Unity (TexasHoldemManager, UI, game state handling) - playable prototype delivered in ~4 months with a team of 4',
+			'Designed clean, modular C# architecture for game flow and front-end systems - enabled future feature additions with minimal refactor',
 		],
 	},
 	{
 		contribution: 'AI & Tools Contributions',
 		highlights: [
-			'Implemented Flask-based backend running Monte Carlo simulations for AI decision-making',
-			'Integrated DeepFace facial recognition to factor in player emotions as part of AI evaluation',
-			'Delivered packaged backend using environment freezing for Windows distribution'
+			'Implemented Flask-based backend running Monte Carlo simulations for AI decision-making - performing thousands of simulations per move',
+			'Integrated DeepFace facial recognition to factor in 7+ emotion categories from player webcam input in real time',
+			'Delivered packaged backend using environment freezing for Windows distribution - ensuring <10 minute setup time across devices',
 		],
 	}
-]
+];
 
 const echoesOfHubrisContributions = [
 	{
 		contribution: 'Gameplay Contributions',
 		highlights: [
-			'Implemented inventory system with stacking, max stacks, and slot management',
-			'Designed and programmed enemy and boss AI, including combat behaviors',
-			'Built character movement and abilities (mobility skills, combat interactions)'
+			'Implemented inventory system with stacking, max stacks, and slot management - scaled to support dozens of item types during development',
+			'Designed and programmed enemy and boss AI, including 5+ unique combat behaviors with multi-phase mechanics',
+			'Built character movement and abilities (mobility skills, combat interactions) used throughout all major levels',
 		],
 	},
 	{
 		contribution: 'Leadership & Pipeline',
 		highlights: [
-			'Directed a team of 6 through core gameplay development using Agile practices',
-			'Balanced both technical implementation (C++/Blueprints) and team management',
+			'Directed a team of 6 through core gameplay development using Agile practices - coordinated over multiple milestone deliverables',
+			'Balanced both technical implementation (C++/Blueprints) and team management - contributed 400+ hours of programming effort alongside leadership duties',
 		],
 	}
-]
+];
+
 
 type Contribution = {
 	contribution: string;
