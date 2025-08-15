@@ -3,21 +3,31 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import VideoModal from "./VideoModal";
+import { DeepDive } from "./DeepDive";
 
 const projectWardenContributions = [
 	{
 		contribution: 'Gameplay Contributions',
 		highlights: [
-			'Implemented procedural labyrinth generation system with configurable room counts, hallway depth, and seeded randomness - enabled creation of unique levels in seconds instead of manual design',
-			<>
-				Designed a modular interaction system adaptable to any interaction type (
-					<VideoModal
-						videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ"
-						trigger="demo video"
-					/>
-				) - used in 10+ gameplay scenarios so far
-			</>,
-			'Built an item slot system for inventory and equipment mechanics supporting multiple slot types and scalable item variety',
+		'Implemented procedural labyrinth generation system with configurable room counts, hallway depth, and seeded randomness - enabled creation of unique levels in seconds instead of manual design',
+		<>
+			Designed a modular interaction system adaptable to any interaction type (
+			<VideoModal
+			videoUrl="https://www.youtube.com/embed/dQw4w9WgXcQ"
+			trigger="demo video"
+			/>
+			) - used in 10+ gameplay scenarios so far
+			<DeepDive
+			problem="Interactions needed to be modular across different gameplay elements."
+			solution="Created a generic system that can plug into any interaction type."
+			images={[
+				{ src: '/code.jpg', caption: 'Interaction setup screenshot' },
+				{ src: '/portrait.jpg', caption: 'Example in gameplay' }
+			]}
+			impact="Reduced implementation time and improved reusability across 10+ systems."
+			/>
+		</>,
+		'Built an item slot system for inventory and equipment mechanics supporting multiple slot types and scalable item variety',
 		],
 	},
 	{
