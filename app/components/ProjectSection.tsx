@@ -16,7 +16,7 @@ const projectWardenContributions = [
 		contribution: 'Tools Contributions',
 		highlights: [
 			'Created Room/Hallway Layout Tool (Unity Editor extension) with procedural options, custom inspectors, and automatic ScriptableObject/prefab linking - reduced new room creation time from 15 minutes to <1 minute',
-			'Developed CSV Importer Tool integrated with Confluence — supports 100+ entries in under 5 seconds, complete with update/create/delete logs and type validation',
+			'Developed CSV Importer Tool integrated with Confluence - supports 100+ entries in under 5 seconds, complete with update/create/delete logs and type validation',
 			'Built a custom logger for targeted debugging by category/region'
 		],
 	},
