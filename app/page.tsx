@@ -1,6 +1,6 @@
 import ProfileSection from './components/ProfileSection';
 import SkillsSection from './components/SkillsSection';
-import ExperienceSection from './components/ExperienceSection';
+import ExperienceSection from './components/ProjectSection';
 
 export default function MinimalistPortfolio() {
 	return (
@@ -13,7 +13,7 @@ export default function MinimalistPortfolio() {
 					</div>
 				</div>
 				{/* Right Column - Skills and Experience */}
-				<div className="md:w-3/5 w-full min-w-0 min-h-0 flex flex-col flex-1 grow p-6 gap-[clamp(2rem,6vw,5rem)]">
+				<div className="md:w-3/5 w-full min-w-0 min-h-0 flex flex-col flex-1 grow p-6 gap-[clamp(1rem,3vw,2rem)]">
 					<SkillsSection />
 					<ExperienceSection />
 				</div>
